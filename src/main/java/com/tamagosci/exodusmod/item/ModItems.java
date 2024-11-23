@@ -1,5 +1,6 @@
-package com.tamagosci.exodusmod.items;
+package com.tamagosci.exodusmod.item;
 
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -10,7 +11,9 @@ import com.tamagosci.exodusmod.ExodusMod;
 public class ModItems {
    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ExodusMod.MOD_ID);
 
-   public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire",() -> new Item(new Item.Properties()));
+   public static final RegistryObject<Item> ZIRCON = ITEMS.register("zircon",() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+
+   public static final RegistryObject<Item> RAW_ZIRCON = ITEMS.register("raw_zircon",() -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
    public static void register(IEventBus eventBus) {
       ITEMS.register(eventBus);
