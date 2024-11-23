@@ -40,7 +40,7 @@ public class ModBlocks {
 	public static final RegistryObject<Block> ZIRCON_BLOCK = registerBlock(
 		"zircon_block",
 		() -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-															  .strength(3f)
+															  .strength(4f)
 															  .requiresCorrectToolForDrops()),
 		ModCreativeModeTab.EXODUS_TAB
 	);
@@ -48,7 +48,7 @@ public class ModBlocks {
 		"zircon_ore",
 		() -> new DropExperienceBlock(
 			BlockBehaviour.Properties.of(Material.STONE)
-											 .strength(3f)
+											 .strength(5f)
 											 .requiresCorrectToolForDrops(),
 			UniformInt.of(3, 7)
 		),
@@ -58,7 +58,7 @@ public class ModBlocks {
 		"deepslate_zircon_ore",
 		() -> new DropExperienceBlock(
 			BlockBehaviour.Properties.of(Material.STONE)
-											 .strength(4f)
+											 .strength(6f)
 											 .requiresCorrectToolForDrops(),
 			UniformInt.of(3, 7)
 		),
