@@ -1,4 +1,6 @@
 {
   "item.exodus.zircon": "Zircon",
-  "item.exodus.raw_zircon": "Raw Zircon"
+  "item.exodus.raw_zircon": "Raw Zircon",
+
+  "itemGroup.exodus_tab": "Exodus"
 }
