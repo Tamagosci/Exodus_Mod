@@ -1,5 +1,6 @@
-package com.tamagosci.exodusmod.item;
+package com.tamagosci.exodusmod;
 
+import com.tamagosci.exodusmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 

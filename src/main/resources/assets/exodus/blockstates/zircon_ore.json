@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "exodus:block/zircon_ore" }
+  }
+}

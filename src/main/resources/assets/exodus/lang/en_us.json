@@ -2,5 +2,9 @@
   "item.exodus.zircon": "Zircon",
   "item.exodus.raw_zircon": "Raw Zircon",
 
+  "block.exodus.zircon_block": "Block of Zircon",
+  "block.exodus.zircon_ore": "Zircon Ore",
+  "block.exodus.deepslate_zircon_ore": "Deepslate Zircon Ore",
+
   "itemGroup.exodus_tab": "Exodus"
 }

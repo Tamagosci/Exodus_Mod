@@ -1,6 +1,7 @@
 package com.tamagosci.exodusmod;
 
 import com.mojang.logging.LogUtils;
+import com.tamagosci.exodusmod.block.ModBlocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -29,6 +30,9 @@ public class ExodusMod
 
         // Register the items
         ModItems.register(modEventBus);
+
+        // Register the blocks
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

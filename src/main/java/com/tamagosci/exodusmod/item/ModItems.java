@@ -1,6 +1,6 @@
 package com.tamagosci.exodusmod.item;
 
-import net.minecraft.world.item.CreativeModeTab;
+import com.tamagosci.exodusmod.ModCreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
