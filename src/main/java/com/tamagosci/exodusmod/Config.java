@@ -1,4 +1,4 @@
-package net.tamagosci.exodusmod;
+package com.tamagosci.exodusmod;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;

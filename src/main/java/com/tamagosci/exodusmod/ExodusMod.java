@@ -1,4 +1,4 @@
-package net.tamagosci.exodusmod;
+package com.tamagosci.exodusmod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -11,6 +11,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import com.tamagosci.exodusmod.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -26,6 +27,9 @@ public class ExodusMod
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        // Register the items
+        ModItems.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -39,6 +43,10 @@ public class ExodusMod
     private void commonSetup(final FMLCommonSetupEvent event)
     {
     }
+
+    //TODO: Add creative tab
+    //@SubscribeEvent
+    //private void addCreative(CreativeModeTabEvent.BuildContents event)
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
