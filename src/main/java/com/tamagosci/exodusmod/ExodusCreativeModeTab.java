@@ -4,7 +4,7 @@ import com.tamagosci.exodusmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
-public class ModCreativeModeTab {
+public class ExodusCreativeModeTab {
    public static final CreativeModeTab EXODUS_TAB = new CreativeModeTab("exodus_tab") {
       @Override
       public ItemStack makeIcon() {

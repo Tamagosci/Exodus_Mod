@@ -1,7 +1,7 @@
 package com.tamagosci.exodusmod.block;
 
 import com.tamagosci.exodusmod.ExodusMod;
-import com.tamagosci.exodusmod.ModCreativeModeTab;
+import com.tamagosci.exodusmod.ExodusCreativeModeTab;
 import com.tamagosci.exodusmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -35,14 +35,16 @@ public class ModBlocks {
 		BLOCKS.register(eventBus);
 	}
 
+	//
 	// Actual Blocks
+	//
 
 	public static final RegistryObject<Block> ZIRCON_BLOCK = registerBlock(
 		"zircon_block",
 		() -> new Block(BlockBehaviour.Properties.of(Material.STONE)
 															  .strength(4f)
 															  .requiresCorrectToolForDrops()),
-		ModCreativeModeTab.EXODUS_TAB
+		ExodusCreativeModeTab.EXODUS_TAB
 	);
 	public static final RegistryObject<Block> ZIRCON_ORE = registerBlock(
 		"zircon_ore",
@@ -52,7 +54,7 @@ public class ModBlocks {
 											 .requiresCorrectToolForDrops(),
 			UniformInt.of(3, 7)
 		),
-		ModCreativeModeTab.EXODUS_TAB
+		ExodusCreativeModeTab.EXODUS_TAB
 	);
 	public static final RegistryObject<Block> DEEPSLATE_ZIRCON_ORE = registerBlock(
 		"deepslate_zircon_ore",
@@ -62,6 +64,6 @@ public class ModBlocks {
 											 .requiresCorrectToolForDrops(),
 			UniformInt.of(3, 7)
 		),
-		ModCreativeModeTab.EXODUS_TAB
+		ExodusCreativeModeTab.EXODUS_TAB
 	);
 }

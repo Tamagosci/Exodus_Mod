@@ -1,0 +1,8 @@
+{
+	"replace": false,
+	"values": [
+		"exodus:zircon_block",
+		"exodus:zircon_ore",
+		"exodus:deepslate_zircon_ore"
+	]
+}
