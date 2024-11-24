@@ -2,6 +2,7 @@ package com.tamagosci.exodusmod.block;
 
 import com.tamagosci.exodusmod.ExodusCreativeModeTab;
 import com.tamagosci.exodusmod.ExodusMod;
+import com.tamagosci.exodusmod.block.custom.JumpyBlock;
 import com.tamagosci.exodusmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -64,6 +65,13 @@ public class ModBlocks {
 											 .requiresCorrectToolForDrops(),
 			UniformInt.of(3, 7)
 		),
+		ExodusCreativeModeTab.EXODUS_TAB
+	);
+
+	public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock(
+		"jumpy_block",
+		() -> new JumpyBlock(BlockBehaviour.Properties.of(Material.STONE)
+																	 .strength(3f)),
 		ExodusCreativeModeTab.EXODUS_TAB
 	);
 }

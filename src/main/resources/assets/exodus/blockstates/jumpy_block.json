@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "exodus:block/jumpy_block" }
+  }
+}

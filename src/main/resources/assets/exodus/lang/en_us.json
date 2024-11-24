@@ -6,6 +6,7 @@
   "block.exodus.zircon_block": "Block of Zircon",
   "block.exodus.zircon_ore": "Zircon Ore",
   "block.exodus.deepslate_zircon_ore": "Deepslate Zircon Ore",
+  "block.exodus.jumpy_block": "Jumpy Block",
 
   "itemGroup.exodus_tab": "Exodus"
 }
