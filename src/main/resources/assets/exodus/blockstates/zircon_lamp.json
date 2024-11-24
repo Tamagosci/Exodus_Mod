@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "exodus:block/zircon_lamp_on" },
+    "lit=false": { "model": "exodus:block/zircon_lamp_off" }
+  }
+}
