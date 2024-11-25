@@ -3,6 +3,8 @@ package com.tamagosci.exodusmod;
 import com.mojang.logging.LogUtils;
 import com.tamagosci.exodusmod.block.ModBlocks;
 import com.tamagosci.exodusmod.item.ModItems;
+import com.tamagosci.exodusmod.world.feature.ModConfiguredFeatures;
+import com.tamagosci.exodusmod.world.feature.ModPlacedFeatures;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -33,6 +35,10 @@ public class ExodusMod
 
         // Register the blocks
         ModBlocks.register(modEventBus);
+
+        // Register world gen
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
