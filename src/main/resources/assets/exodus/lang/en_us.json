@@ -9,5 +9,8 @@
   "block.exodus.jumpy_block": "Jumpy Block",
   "block.exodus.zircon_lamp": "Zircon Lamp",
 
-  "itemGroup.exodus_tab": "Exodus"
+  "itemGroup.exodus_tab": "Exodus",
+  
+  "key.category.exodus.exodus_mod": "Exodus Mod",
+  "key.exodus.open_menu": "Open Exodus Menu"
 }
